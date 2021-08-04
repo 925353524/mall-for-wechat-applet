@@ -1,0 +1,16 @@
+
+.right-list {
+	margin-bottom: 10rpx;
+}
+.right-list image{
+	width: 75%;
+	position: relative;
+	top: 0;
+	left: 13%;
+}
+.right-list text {
+	text-align: center;
+	font-size: 24rpx;
+	color: black;
+}
+

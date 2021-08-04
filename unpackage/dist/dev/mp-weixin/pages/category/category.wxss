@@ -1,0 +1,32 @@
+
+.category.data-v-682a9774 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.seat.data-v-682a9774{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+}
+.left.data-v-682a9774 {
+	width: 200rpx;
+}
+.left.data-v-682a9774, .right.data-v-682a9774 {
+	height: calc(100vh - 94px);
+}
+.left.data-v-682a9774, .right.data-v-682a9774 {
+	height: 100vh;
+}
+.left-item.data-v-682a9774 {
+	height: 90rpx;
+	font-size: 34rpx;
+	text-align: center;
+	line-height: 90rpx;
+	background-color: #f6f6f6;
+}
+.active.data-v-682a9774 {
+	border-left: 4px solid #ff8198;
+	background-color: #FFFFFF;
+}
+

@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*每个页面公共css */
+page {
+	font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+	color: #666666;
+}
+._a:hover,._a:link,._a:visited,._a:active,._a:focus{
+	color: ghostwhite;
+	text-decoration: none;
+}
+

@@ -1,0 +1,1 @@
+<view class="detail-nav data-v-5ae35391"><block wx:for="{{titles}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view data-event-opts="{{[['tap',[['navClick',[index]]]]]}}" class="{{['data-v-5ae35391',(index===currentIndex)?'detail-nav-active':'']}}" bindtap="__e">{{''+item+''}}</view></block></view>

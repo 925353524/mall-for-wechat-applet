@@ -1,0 +1,84 @@
+
+.cart-list.data-v-582a32a5 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex; 
+	-webkit-box-align: center; 
+	-webkit-align-items: center; 
+	        align-items: center; 
+	padding: 20rpx 10rpx;
+	/* border-bottom: 1px solid rgba(204, 204, 204, .8); */
+}
+.chose.data-v-582a32a5 {
+	width: 46rpx;
+	height: 46rpx;
+	margin-right: 10rpx;
+	border: 1px solid rgba(204, 204, 204, 1);
+	border-radius: 50%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.active.data-v-582a32a5 {
+	background-color: #ff8198;
+	border: 1px solid rgba(0,0,0,0);
+}
+.cart-list-item.data-v-582a32a5 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+}
+.cart-list-item image.data-v-582a32a5 {
+	width: 180rpx;
+	height: 230rpx;
+	background-color: rgba(246, 246, 246, .3);
+	border-radius: 5px;
+	margin-right: 20rpx;
+}
+.item-right.data-v-582a32a5 {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.item-right .item-title.data-v-582a32a5 {
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	white-space: normal !important;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	font-size: 32rpx;
+}
+.item-right .item-info.data-v-582a32a5 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex; 
+	-webkit-box-pack: justify; 
+	-webkit-justify-content: space-between; 
+	        justify-content: space-between;
+}
+.item-right .item-info .price.data-v-582a32a5 {
+	padding-top: 14rpx; 
+	color: #ff4500;
+}
+

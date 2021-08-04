@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#ff8198",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "mall-address": "/components/common/mall-address/mallAddress"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "person-info": "/pages/profile/childCom/personInfo",
+    "my-order": "/pages/profile/childCom/myOrder"
+  }
+}

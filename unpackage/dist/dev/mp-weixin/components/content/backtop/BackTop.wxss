@@ -1,0 +1,12 @@
+
+.back-top.data-v-9ba02368 {
+    position: fixed;
+    z-index: 9;
+    right: 16rpx;
+    bottom: 110rpx;
+}
+.back-top image.data-v-9ba02368 {
+		width: 86rpx;
+		height: 86rpx;
+}
+

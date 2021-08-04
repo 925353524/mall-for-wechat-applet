@@ -1,0 +1,1 @@
+.detail-nav.data-v-5ae35391{position:fixed;z-index:9;display:-webkit-box;display:-webkit-flex;display:flex;width:750rpx;height:52rpx;text-align:center;color:#888;background-color:#fff}.detail-nav.data-v-5ae35391{top:0}.detail-nav view.data-v-5ae35391{-webkit-box-flex:1;-webkit-flex:1;flex:1;font-size:30rpx}.detail-nav-active.data-v-5ae35391{color:#ff8198}

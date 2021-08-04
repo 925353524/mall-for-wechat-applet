@@ -1,0 +1,1 @@
+<view><person-info vue-id="23b2e5ec-1" bind:__l="__l"></person-info><my-order vue-id="23b2e5ec-2" bind:__l="__l"></my-order></view>

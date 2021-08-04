@@ -1,0 +1,9 @@
+{
+  "onReachBottomDistance": 250,
+  "usingComponents": {
+    "uni-notice-bar": "/uni_modules/uni-notice-bar/components/uni-notice-bar/uni-notice-bar",
+    "tab-control": "/components/content/tabControl/TabControl",
+    "good-list": "/components/content/goods/GoodList",
+    "back-top": "/components/content/backtop/BackTop"
+  }
+}

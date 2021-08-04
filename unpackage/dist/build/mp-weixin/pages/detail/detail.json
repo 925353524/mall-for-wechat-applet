@@ -1,0 +1,16 @@
+{
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "uni-goods-nav": "/components/common/uni-goods-nav/components/uni-goods-nav/uni-goods-nav",
+    "uni-popup": "/uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "detail-nav-bar": "/pages/detail/childCom/detailNavBar",
+    "detail-shop-info": "/pages/detail/childCom/detailShopInfo",
+    "datail-good-info": "/pages/detail/childCom/datailGoodInfo",
+    "detail-params": "/pages/detail/childCom/detailParams",
+    "detail-comment": "/pages/detail/childCom/detailComment",
+    "good-list": "/components/content/goods/GoodList",
+    "back-top": "/components/content/backtop/BackTop",
+    "detail-pop-view": "/pages/detail/childCom/detailPopView"
+  }
+}

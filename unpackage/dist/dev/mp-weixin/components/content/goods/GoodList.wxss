@@ -1,0 +1,12 @@
+
+.goods.data-v-3cecfff6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  padding: 4rpx;
+}
+
