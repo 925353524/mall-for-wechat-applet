@@ -165,5 +165,12 @@
 		position: fixed;
 		top: 88rpx;
 		width: 750rpx;
+		background: #FFFFFF;
+		z-index: 9;
 	}
+	/* #ifdef MP-WEIXIN */
+		.top-tab {
+			top: 0;
+		}
+	/* #endif */
 </style>

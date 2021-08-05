@@ -129,7 +129,7 @@
 				} else {
 					uni.showToast({
 						icon: 'none',
-						title: '快停下你罪恶的小手'
+						title: '快停下你罪恶的小手,不可以买东西'
 					})
 				}
 			}

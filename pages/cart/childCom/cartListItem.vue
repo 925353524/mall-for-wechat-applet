@@ -60,7 +60,6 @@
 					return this.$store.state.cartList[this.currentIndex].count
 				},
 				set: debounce(function(value) {
-					console.log(111);
 					this.$store.dispatch('changeCount', [this.$store.state.cartList[this.currentIndex], value])
 				},200),
 			}
@@ -77,9 +76,10 @@
 				})
 			},
 			// 当输入框为空
-			countBlur() {
-				if(!this.$refs.goodCount.inputValue) {
+			countBlur(event) {
+				if(event.detail.value == "") {
 					// this.$refs.goodCount.inputValue = 1
+					event.detail.value = 1
 					this.$store.dispatch('changeCount', [this.$store.state.cartList[this.currentIndex], 1])
 				}
 			}

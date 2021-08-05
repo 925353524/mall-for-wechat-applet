@@ -1,1 +1,1 @@
-<view class="data-v-69f56550"><mall-address class="settle-address data-v-69f56550" vue-id="0c4e5a20-1" bind:__l="__l"></mall-address></view>
+<view class="data-v-28d1a270"><mall-address class="settle-address data-v-28d1a270" vue-id="0c4e5a20-1" addData="{{myAdress}}" bind:__l="__l"></mall-address></view>

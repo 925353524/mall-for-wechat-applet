@@ -202,7 +202,6 @@ var _default2 = { data: function data() {return {};}, props: { product: { type: 
         return this.$store.state.cartList[this.currentIndex].count;
       },
       set: (0, _myUtils.debounce)(function (value) {
-        console.log(111);
         this.$store.dispatch('changeCount', [this.$store.state.cartList[this.currentIndex], value]);
       }, 200) } },
 
@@ -219,9 +218,10 @@ var _default2 = { data: function data() {return {};}, props: { product: { type: 
 
     },
     // 当输入框为空
-    countBlur: function countBlur() {
-      if (!this.$refs.goodCount.inputValue) {
+    countBlur: function countBlur(event) {
+      if (event.detail.value == "") {
         // this.$refs.goodCount.inputValue = 1
+        event.detail.value = 1;
         this.$store.dispatch('changeCount', [this.$store.state.cartList[this.currentIndex], 1]);
       }
     } } };exports.default = _default2;

@@ -149,8 +149,12 @@
 			// 下单
 			popBuyClick() {
 				if(this.colorIndex > -1 && this.sizeIndex > -1) {
-					uni.navigateTo({
-						url:'/pages/settlement/settlement'
+					// uni.navigateTo({
+					// 	url:'/pages/settlement/settlement'
+					// })
+					uni.showToast({
+						icon: 'none',
+						title: '现在还不能买哦'
 					})
 				} else {
 					uni.showToast({

@@ -35,5 +35,11 @@
 	position: fixed;
 	top: 88rpx;
 	width: 750rpx;
+	background: #FFFFFF;
+	z-index: 9;
 }
+.top-tab.data-v-57280228 {
+		top: 0;
+}
+
 

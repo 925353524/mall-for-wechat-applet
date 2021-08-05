@@ -150,7 +150,14 @@ __webpack_require__.r(__webpack_exports__);
     uni.setNavigationBarTitle({
       title: '确认订单' });
 
-  } };exports.default = _default;
+  },
+  computed: {
+    myAdress: function myAdress() {
+      var defaultAdd = this.$store.state.myAddress.filter(function (item) {
+        return item.isDefault;
+      });
+      return defaultAdd[0];
+    } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

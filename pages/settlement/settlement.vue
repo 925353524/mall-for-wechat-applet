@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<!-- 地址 -->
-		<mall-address class="settle-address"></mall-address>
+		<mall-address :addData="myAdress" class="settle-address"></mall-address>
 		<!-- 商品信息 -->
 		
 	</view>
@@ -19,6 +19,14 @@
 				title: '确认订单'
 			})
 		},
+		computed: {
+			myAdress() {
+				let defaultAdd = this.$store.state.myAddress.filter(item => {
+					return item.isDefault
+				})
+				return defaultAdd[0]
+			}
+		}
 	}
 </script>
 
