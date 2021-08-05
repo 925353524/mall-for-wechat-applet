@@ -822,7 +822,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"mall","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"mall","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -2000,9 +2000,9 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 11:
-/*!************************************!*\
-  !*** F:/Project/mall/utils/api.js ***!
-  \************************************/
+/*!******************************************************************!*\
+  !*** F:/Project/applet-mall/mall-for-wechat-applet/utils/api.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2038,9 +2038,9 @@ var myRequest = function myRequest(options) {
 /***/ }),
 
 /***/ 12:
-/*!**************************************!*\
-  !*** F:/Project/mall/store/index.js ***!
-  \**************************************/
+/*!********************************************************************!*\
+  !*** F:/Project/applet-mall/mall-for-wechat-applet/store/index.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3209,9 +3209,9 @@ var index = {
 /***/ }),
 
 /***/ 14:
-/*!******************************************!*\
-  !*** F:/Project/mall/store/mutations.js ***!
-  \******************************************/
+/*!************************************************************************!*\
+  !*** F:/Project/applet-mall/mall-for-wechat-applet/store/mutations.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3301,9 +3301,9 @@ _mutationTypes.DEL_ADDRESS, function (state, payload) {
 /***/ }),
 
 /***/ 15:
-/*!***********************************************!*\
-  !*** F:/Project/mall/store/mutation-types.js ***!
-  \***********************************************/
+/*!*****************************************************************************!*\
+  !*** F:/Project/applet-mall/mall-for-wechat-applet/store/mutation-types.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3323,9 +3323,9 @@ var DEL_ADDRESS = 'del_address';exports.DEL_ADDRESS = DEL_ADDRESS;
 /***/ }),
 
 /***/ 16:
-/*!****************************************!*\
-  !*** F:/Project/mall/store/actions.js ***!
-  \****************************************/
+/*!**********************************************************************!*\
+  !*** F:/Project/applet-mall/mall-for-wechat-applet/store/actions.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3444,9 +3444,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 17:
-/*!****************************************!*\
-  !*** F:/Project/mall/store/getters.js ***!
-  \****************************************/
+/*!**********************************************************************!*\
+  !*** F:/Project/applet-mall/mall-for-wechat-applet/store/getters.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9003,7 +9003,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_NAME":"mall","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_NAME":"mall","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -9024,14 +9024,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"mall","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"mall","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"mall","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"mall","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -9117,7 +9117,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"mall","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"mall","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -9526,9 +9526,9 @@ internalMixin(Vue);
 /***/ }),
 
 /***/ 204:
-/*!***************************************************************************!*\
-  !*** F:/Project/mall/uni_modules/uni-icons/components/uni-icons/icons.js ***!
-  \***************************************************************************/
+/*!*********************************************************************************************************!*\
+  !*** F:/Project/applet-mall/mall-for-wechat-applet/uni_modules/uni-icons/components/uni-icons/icons.js ***!
+  \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9679,9 +9679,9 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ 25);
 /***/ }),
 
 /***/ 240:
-/*!******************************************************************************!*\
-  !*** F:/Project/mall/uni_modules/uni-forms/components/uni-forms/validate.js ***!
-  \******************************************************************************/
+/*!************************************************************************************************************!*\
+  !*** F:/Project/applet-mall/mall-for-wechat-applet/uni_modules/uni-forms/components/uni-forms/validate.js ***!
+  \************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10942,9 +10942,9 @@ if (hadRuntime) {
 /***/ }),
 
 /***/ 262:
-/*!******************************************************************************!*\
-  !*** F:/Project/mall/components/common/simple-address/city-data/province.js ***!
-  \******************************************************************************/
+/*!************************************************************************************************************!*\
+  !*** F:/Project/applet-mall/mall-for-wechat-applet/components/common/simple-address/city-data/province.js ***!
+  \************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11096,9 +11096,9 @@ provinceData;exports.default = _default;
 /***/ }),
 
 /***/ 263:
-/*!**************************************************************************!*\
-  !*** F:/Project/mall/components/common/simple-address/city-data/city.js ***!
-  \**************************************************************************/
+/*!********************************************************************************************************!*\
+  !*** F:/Project/applet-mall/mall-for-wechat-applet/components/common/simple-address/city-data/city.js ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12614,9 +12614,9 @@ cityData;exports.default = _default;
 /***/ }),
 
 /***/ 264:
-/*!**************************************************************************!*\
-  !*** F:/Project/mall/components/common/simple-address/city-data/area.js ***!
-  \**************************************************************************/
+/*!********************************************************************************************************!*\
+  !*** F:/Project/applet-mall/mall-for-wechat-applet/components/common/simple-address/city-data/area.js ***!
+  \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25173,9 +25173,9 @@ areaData;exports.default = _default;
 /***/ }),
 
 /***/ 279:
-/*!***********************************************************************************************!*\
-  !*** F:/Project/mall/uni_modules/uni-transition/components/uni-transition/createAnimation.js ***!
-  \***********************************************************************************************/
+/*!*****************************************************************************************************************************!*\
+  !*** F:/Project/applet-mall/mall-for-wechat-applet/uni_modules/uni-transition/components/uni-transition/createAnimation.js ***!
+  \*****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25342,9 +25342,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 306:
-/*!*******************************************************************************************!*\
-  !*** F:/Project/mall/uni_modules/uni-dateformat/components/uni-dateformat/date-format.js ***!
-  \*******************************************************************************************/
+/*!*************************************************************************************************************************!*\
+  !*** F:/Project/applet-mall/mall-for-wechat-applet/uni_modules/uni-dateformat/components/uni-dateformat/date-format.js ***!
+  \*************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25544,9 +25544,9 @@ function friendlyDate(time, _ref)
 /***/ }),
 
 /***/ 35:
-/*!****************************************!*\
-  !*** F:/Project/mall/utils/myUtils.js ***!
-  \****************************************/
+/*!**********************************************************************!*\
+  !*** F:/Project/applet-mall/mall-for-wechat-applet/utils/myUtils.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25567,9 +25567,9 @@ function debounce(func, delay) {
 /***/ }),
 
 /***/ 4:
-/*!**********************************!*\
-  !*** F:/Project/mall/pages.json ***!
-  \**********************************/
+/*!****************************************************************!*\
+  !*** F:/Project/applet-mall/mall-for-wechat-applet/pages.json ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

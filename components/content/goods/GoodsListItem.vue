@@ -3,9 +3,11 @@
     <image alt="" :src="showImage">
     <view class="item-info">
       <p>{{goodsItem.title}}</p>
-      <span class="price">{{goodsItem.price}}</span>
-			<image src="../../../static/img/collect.svg"></image>
-      <span class="collect">{{goodsItem.cfav}}</span>
+			<view class="info-content">
+				<span class="price">{{goodsItem.price}}</span>
+				<image src="../../../static/img/collect.svg"></image>
+				<span class="collect">{{goodsItem.cfav}}</span>
+			</view>
     </view>
   </view>
 </template>
@@ -67,10 +69,18 @@ export default {
     white-space: nowrap;
     margin-bottom: 6rpx;
   }
+	
+	.info-content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
   .price {
     color: #ff8198;
     margin-right: 16rpx;
+		font-size: 32rpx;
+		line-height: 32rpx;
   }
 
   .collect {

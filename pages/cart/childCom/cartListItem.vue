@@ -12,8 +12,10 @@
 					<view class="item-info">
 						<view class="price">￥{{finalSkuPrice}}</view>
 						<uni-number-box :min="1" 
+						ref="goodCount"
 						style="transform: scale(0.85);" 
-						@change="countChange">{{finalCount}}</uni-number-box>
+						v-model="finalCount"
+						@blur="countBlur"></uni-number-box>
 					</view>
 				</view>
 			</view>
@@ -53,8 +55,14 @@
 				return this.$store.state.cartList[this.currentIndex].isActived
 			},
 			// 返回商品数量
-			finalCount() {
-				return this.$store.state.cartList[this.currentIndex].count
+			finalCount: {
+				get() {
+					return this.$store.state.cartList[this.currentIndex].count
+				},
+				set: debounce(function(value) {
+					console.log(111);
+					this.$store.dispatch('changeCount', [this.$store.state.cartList[this.currentIndex], value])
+				},200),
 			}
 		},
 		methods: {
@@ -62,14 +70,18 @@
 			select() {
 				this.$store.dispatch('changeSelected', this.product)
 			},
-			// 数量
-			countChange: debounce(function(value) {
-				this.$store.dispatch('changeCount', [this.$store.state.cartList[this.currentIndex], value])
-			},200),
+			// 进入商品详情
 			goDetail() {
 				uni.navigateTo({
 					url: '/pages/detail/detail?id=' + this.product.id
 				})
+			},
+			// 当输入框为空
+			countBlur() {
+				if(!this.$refs.goodCount.inputValue) {
+					// this.$refs.goodCount.inputValue = 1
+					this.$store.dispatch('changeCount', [this.$store.state.cartList[this.currentIndex], 1])
+				}
 			}
 		}
 	}

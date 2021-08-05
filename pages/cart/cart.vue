@@ -19,7 +19,7 @@
 			</view>
 			<view v-show="!isDeleteState">合计：￥{{totalPrice}}</view>
 			<button size="mini" @click="settleCart" v-show="!isDeleteState">结算</button>
-			<button class="del" size="mini" @click="settleCart" v-show="isDeleteState">删除</button>
+			<button class="del" size="mini" @click="delCart" v-show="isDeleteState">删除</button>
 		</view>
 		<view class="cart-none" v-show="!(cartListCount > 0)">
 			空空如也~
@@ -95,8 +95,8 @@
 				this.isDeleteState = !this.isDeleteState
 				console.log(this.$store.state.cartList);
 			},
-			// 结算、删除
-			settleCart() {
+			// 删除
+			delCart() {
 				// 删除商品
 				uni.showModal({
 					content: '是否要删除选中的商品',
@@ -114,6 +114,24 @@
 						}
 					}
 				})
+			},
+			// 结算
+			settleCart() {
+				let nowSelect = this.$store.state.cartList.filter(function(item){
+					return item.isActived
+				})
+				console.log(nowSelect);
+				if(nowSelect.length == 0) {
+					uni.showToast({
+						icon: 'none',
+						title: '请选择商品'
+					})
+				} else {
+					uni.showToast({
+						icon: 'none',
+						title: '快停下你罪恶的小手'
+					})
+				}
 			}
 		},
 	}
